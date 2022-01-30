@@ -30,7 +30,7 @@ void myproject(
     unsigned short &const_size_out_1,
     model_weightdefault_t  w4 [ 400 ],
     model_weightdefault_t  w8[ 3153920 ],
-    model_weightdefault_t  w12 [ 65536 ];
+    model_weightdefault_t  w12 [ 65536 ],
     model_weightdefault_t  w22 [ 36864 ],
     model_weightdefault_t  w27 [ 73728 ],
     model_weightdefault_t  w18 [ 18432 ],

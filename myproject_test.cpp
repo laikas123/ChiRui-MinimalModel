@@ -101,7 +101,7 @@ int main(int argc, char **argv)
 
       //hls-fpga-machine-learning insert top-level-function
       unsigned short size_in1,size_out1;
-      myproject(em_barrel,layer18_out,size_in1,size_out1m, w4, w8, w12, w22, w27, w18, w9, w13, w45, w36, w53, w31, w49, w40, w16);
+      myproject(em_barrel,layer18_out,size_in1,size_out1, w4, w8, w12, w22, w27, w18, w9, w13, w45, w36, w53, w31, w49, w40, w16);
 
       if (e % CHECKPOINT == 0) {
         std::cout << "Predictions" << std::endl;
@@ -148,7 +148,7 @@ int main(int argc, char **argv)
 
     //hls-fpga-machine-learning insert top-level-function
     unsigned short size_in1,size_out1;
-    myproject(em_barrel,layer18_out,size_in1,size_out1, w4, w8, w12, w22, w27, w18, w9, w13, w45, w36, w53, w31, w49, w40, w16));
+    myproject(em_barrel,layer18_out,size_in1,size_out1, w4, w8, w12, w22, w27, w18, w9, w13, w45, w36, w53, w31, w49, w40, w16);
 
     //hls-fpga-machine-learning insert output
     nnet::print_result<result_t, N_LAYER_16>(layer18_out, std::cout, true);

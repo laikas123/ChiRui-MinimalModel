@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../firmware/myproject.cpp in debug mode
+../../../../firmware/myproject.cpp: In function ‘void myproject(hls::stream<nnet::array<ap_fixed<16, 6>, 4u> >&, hls::stream<nnet::array<ap_fixed<16, 6>, 1u> >&, short unsigned int&, short unsigned int&, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*, model_weightdefault_t*)’:
+../../../../firmware/myproject.cpp:98:17: error: ‘layer6_t’ was not declared in this scope
+     nnet::dense<layer6_t, layer8_t, config8>(layer6_out, layer8_out, w8, b8); // dense
+                 ^~~~~~~~
+../../../../firmware/myproject.cpp:98:46: error: ‘layer6_out’ was not declared in this scope
+     nnet::dense<layer6_t, layer8_t, config8>(layer6_out, layer8_out, w8, b8); // dense
+                                              ^~~~~~~~~~
+make: *** [obj/myproject.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************
